@@ -33,6 +33,11 @@ with urlopen(file) as story: #give nickname
                 data[word] = 1
             count += 1
 print("Total number of words", count)
-print("Total data", data)
+#print("Total data", data) -- to count the number of times each value appears
+#Total data {'us': 2, 'the': 14, 'on': 1, 'of': 12, 'evil': 1, 'present': 1, 'best': 1, 'good': 1, 'degree': 1,
+
+#sort by keys
+for key in sorted(data.keys()):
+    print(key, data[key])
 #how do you test if the value exists in the dictonary: keyword "in"
 #get the total count
