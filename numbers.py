@@ -27,3 +27,8 @@ print("boolean const. bool([1,2,3[)",bool([1,2,3]))
 print("boolean const. bool("")",bool(""))
 print("boolean const. bool('False')", bool("False"))
 #will push this file to github: VCS > Import into Version control > share project on github >> no token change to password
+#Realational Operators: Python supports ==, !=<, >, >=, <=
+a=12
+print("a==12", a==12)
+print("a !=12", a !=12)
+Print("New Line")
