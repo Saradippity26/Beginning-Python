@@ -31,4 +31,4 @@ print("boolean const. bool('False')", bool("False"))
 a=12
 print("a==12", a==12)
 print("a !=12", a !=12)
-Print("New Line")
+print("New Line")
