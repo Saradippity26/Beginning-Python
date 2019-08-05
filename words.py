@@ -18,7 +18,7 @@ file = "https://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
 #b'it was the worst of times\n'
 
 count = 0
-data = {}
+data = {} # empty dictonary
 with urlopen(file) as story: #give nickname
     #connects to file on web and creates an object and is now in story
    # print(story) -- we want to iterate over this
@@ -26,6 +26,7 @@ with urlopen(file) as story: #give nickname
         words = line.decode('utf-8').split() #split with space as
       #print(words)
         for word in words:
+            #check if key is already in dictonary
             if word in data:
                 data[word] += 1
             else:

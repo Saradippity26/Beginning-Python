@@ -28,6 +28,6 @@ while total < 3:
     #add element to dictonary
     roster[name] = grade
 #note: if key value exist, it will update the value otherwise it will be added to the dictonary.
-    total =+ 1
+    total += 1
 #print dictionary
 print(roster)
