@@ -31,3 +31,5 @@ while total < 3:
     total = total + 1
 # display list
 print(names)
+
+#hashes: accessed by a key.
