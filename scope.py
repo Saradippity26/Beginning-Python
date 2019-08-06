@@ -51,5 +51,11 @@ if __name__ == '__main__':
     help(scope.set_coun.__doc__) # easier to read view 
     ## even your files are classes, inherited from a base class 
     
-    
+    Tuple : constant fixed list cannot change it : heterogeneos immutable sequence 
+    access members by [] : define by ()
+    List : access [] by index : define []
+    dict : [] by key : define {}
+    str : "" define, access [] index
+    tuple : define () ; [] access index 
+
     """
