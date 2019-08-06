@@ -2,8 +2,8 @@
 To learn about collections: tuples, strings, range, list, dictionaries, and sets
  Tuple : constant fixed list cannot change it : heterogeneous immutable sequence
     access members by [] : define by ()
-    List : access [] by index : define []
-    dict : [] by key : define {}
+    List : access [] by index : define [] mutable
+    dict : [] by key : define {} mutable
     str : "" define, access [] index
     tuple : define () ; [] access index
 """
@@ -78,6 +78,19 @@ def main():
     :return: values swapped 
     ---
     return obj2, obj1
+    
+    # tuple constructor : tuple()
+    t_from_l = tuple([3, 77, 11])
+    print(t_from_1, type(t_from_1)) -> (3, 77, 11) <class 'tuple'>
+    
+    PC: create a tuple from a string 
+    tuple("Weber State")
+    -> ('W', 'e', ....
+    
+    to test for membership use in and not in true for list, strings, etc. 
+    print(5 in (3, 6, 8, 5, 12))
+    print(5 not in (3, 6, 8, 5, 12))
+    
 """
 
 if __name__ == '__main__':
