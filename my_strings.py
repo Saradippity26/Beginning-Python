@@ -31,7 +31,7 @@ def main():
 # partitioning strings
     departure, separator, arrival ="London:Edinburgh". partition(":")
     print(departure, arrival) # ->London Edinburgh
-
+"""
 # dummy object _  use this if you needed to preserve the separator as well ":"
 # departure, _, arrival ="London:Edinburgh". partition(":") -> London : Edinburgh
 # could so a tuple as well: t = "London:Edinburgh".partition(":")
@@ -52,7 +52,7 @@ def main():
 # print elements of list
 # print("Galactic position x={pos[0]}, y={pos[1]}, z={pos[2]}.format(pos=(85.6, 23.3, 99.0)))
 # -> Galactic position x=85.6, y=23.3, z=99.0
-
+"""
 
 if __name__ == '__main__':
     main()
