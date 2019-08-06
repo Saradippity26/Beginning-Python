@@ -25,6 +25,18 @@ def replace(g):
     print("g = ", g)
 
 
+def replace_content(g):
+    """
+    Replace the content of the input list
+    :param g: input list
+    :return: nothing
+    """
+    g[0] = 88
+    g[1] = 22
+    g[2] = 44
+    print("g = ", g)
+
+
 def main():
     """
     test function
@@ -37,6 +49,9 @@ def main():
     print("after modify() m = ", m)
     replace(m)
     print("after replace() m =", m)
+
+    replace_content(m)
+    print("after replace_content() m = ", m)
 
 
 if __name__ == '__main__':
