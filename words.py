@@ -9,20 +9,21 @@ from functions import even_or_odd
 
 #with urlopen(file) as story: #give nickname
 #connects to file on web and creates an object and is now in story
-   # print(story) -- we want to iterate over this
+# print(story) -- we want to iterate over this
 # for line in story:
 #            print(line)
 
 #notice output you are getting bytes not strings you will need to decode it
-#use the split method for strings , decode it first"C:\Program Files\Python35\python.exe" C:/Users/CCEClass1/Desktop/Beginning-Python/words.py
+#use the split method for strings , decode it first"C:\Program Files\Python35\python.exe"
+# C:/Users/CCEClass1/Desktop/Beginning-Python/words.py
 #b'It was the best of times\n'
 #b'it was the worst of times\n'
 def fetch_words(filename):
     """
     fetch the words from a file on the web, returns nothing for now
-    :return:
-    count works in url file
-    :param url to file
+    count words in url file
+    :return:   a list with the items
+    :param filename: url to file
     """
     count = 0
     data = {} # empty dictonary
@@ -54,7 +55,9 @@ def fetch_words(filename):
 #create a function to make it a module and make it dual then test it.
 def main():
     filename = "https://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
-    fetch_words(filename)
+    fetch_words(filename) # capturing the data requested from the list
+
+    #modularization of function
 if __name__ == "__main__":
     main()
     exit(0)
