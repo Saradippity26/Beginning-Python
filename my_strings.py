@@ -31,7 +31,7 @@ def main():
 # partitioning strings
     departure, separator, arrival ="London:Edinburgh". partition(":")
     print(departure, arrival) # ->London Edinburgh
-"""
+"""   
 # dummy object _  use this if you needed to preserve the separator as well ":"
 # departure, _, arrival ="London:Edinburgh". partition(":") -> London : Edinburgh
 # could so a tuple as well: t = "London:Edinburgh".partition(":")
