@@ -33,11 +33,11 @@ def main():
     """
     # list comprehensions will give you a shorthand of all of this code
     words = "Today I am very happy to learn about list comprehensions".split()
-    print(words) # -> ['Today', 'I', 'am', 'very', 'happy', 'to', 'learn', 'about', 'list', 'comprehensions']
+    # print(words) # -> ['Today', 'I', 'am', 'very', 'happy', 'to', 'learn', 'about', 'list', 'comprehensions']
     data = [] # empty list
 
     for word in words: # some analysis
-        print(word) # accesses individual element of the list -> Today \n I \n am...
+       # print(words) # accesses individual element of the list -> Today \n I \n am...
         data.append(word)
 
         # Filter data
@@ -49,7 +49,7 @@ def main():
         # print(factorial(x))
         # now create an array that contains the length of each of the factorials (len works on collections not int)
         # need to cast as a string then len
-        # info.append(len(str(factorial(x))))
+        info.append(len(str(factorial(x))))
         pp(info)
 
     # how to use a comprehension instead: [] for list comprehensions
