@@ -74,7 +74,7 @@ def main():
     # Filter predicates:
 
     primes = [x for x in range(101) if is_prime(x)]
-    print(len(primes), primes)   
+    print(len(primes), primes)
 
 
 if __name__ == '__main__':
