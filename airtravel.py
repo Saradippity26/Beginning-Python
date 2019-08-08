@@ -76,6 +76,24 @@ class Flight: # Class
         # Assign the seat
         self._seating[row][letter] = passenger
 
+    def num_available_seats(self):
+        return sum(sum(1 for s in row.values() if s is None)
+                   for row in self._seating
+                   if row is not None)
+
+    def make_boarding_class(self, card_printer):
+        for passenger, seat in sorted(self._passenger_seats()):
+            card_printer(passenger, seat, self.number(), self._aircraft.model())
+
+    def _passenger_seats(self):
+        row_numbers, seat_letters = self._aircraft.seating_plan()
+        for row in row_numbers:
+            for letter in seat_letters:
+                passenger = self._seating[row][letter]
+                if passenger is not None:
+                    yield (passenger, "{}{}".format(row, letter))
+
+
 class Aircraft:
     def __init__(self, registration, model, num_rows, num_seats_per_row):
 
@@ -102,6 +120,7 @@ def main():
         :return:
         """
         pass
+
 
 if __name__ == '__main__':
     main()
