@@ -32,3 +32,4 @@ This is an introduction to Python coding language
 ## Day 4 Summary 
 - Classes 
 - Files 
+- Instructor code: https://github.com/hugo-valle/intro-python/blob/master/list_comprehensions.py

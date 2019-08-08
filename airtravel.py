@@ -11,7 +11,7 @@ class Flight: # Class
     """
     # Python does not have private, public and protected variables : __dunders__ are meant for private use
     # _on underscore means meant for private private use in Python
-    def __init__(self, number): # Methods
+    def __init__(self, number, aircraft): # Methods
         """
         Initialized Flight number
         :param number: flight number
@@ -28,7 +28,15 @@ class Flight: # Class
             raise ValueError("Invalid airline code {}".format(number))
         if not number[2:].isdigit():
             raise ValueError("Invalid route code {}".format(number))
+
         self._number = number
+        self._aircraft = aircraft
+
+
+        rows, seats = self._aircraft.seating_plan()  # no underscore used to unpack and variable will die here
+        self._seating = [None] + [{letter: None for letter in seats} for _ in rows]  # _ is the default
+
+
 
     def number(self):
         """
@@ -41,6 +49,9 @@ class Flight: # Class
 
     def airline(self):
         return self._number[:2]
+
+    def allocate_seat(self, seat, name):
+        return
 
 
 class Aircraft:
@@ -57,7 +68,9 @@ class Aircraft:
     def model(self):
         return self._model # returns a model
 
-
+    def seating_plan(self):
+        return (range(1, self._num_rows + 1), "ABCDEFGHJK"[:self._num_seats_per_row])
+        # returns the generator I want to return a tuple
 
 
 
