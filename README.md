@@ -17,3 +17,18 @@ This is an introduction to Python coding language
     - Optional parameters 
 - Tuples and unpacking Tuples 
 - More about strings 
+
+## Day 3 Summary 
+- Completed discussion on collections
+    - List  
+    - Dictionaries 
+    - Strings 
+    - Tuples 
+    - Range 
+    - Sets 
+- Basics of exceptions: ** try, except, throw**
+- Comprehensions
+
+## Day 4 Summary 
+- Classes 
+- Files 
