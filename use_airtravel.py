@@ -19,6 +19,11 @@ def main():
     # a1 = Aircraft("G-EUP", "Airbus A319", num_rows= 22, num_seats_per_row= 6)
     # print(a1.registration(), a1.model())
     pp(f1._seating)
+    f1.allocate_seat("02A", "Guido Van Roussum")
+    f1.allocate_seat("02F", "Van Roussum")
+    f1.allocate_seat("02B", "Van")
+    # f1.allocate_seat("02A", "Guido Roussum")
+    pp(f1._seating)
 
 
 if __name__ == '__main__':
